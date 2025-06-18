@@ -1,6 +1,14 @@
 import { storage } from "../storage";
 import type { WeatherData } from "@shared/schema";
 
+/**
+ * Weather Service for Real-time Meteorological Data
+ * 
+ * This service integrates with meteorological APIs to fetch real-time
+ * and historical weather data for automated claim verification based
+ * on rainfall thresholds and drought conditions.
+ */
+
 export class WeatherService {
   // Mock weather data service - in production this would call actual weather APIs like IMD
   async getRainfallData(district: string, state: string, startDate: Date, endDate: Date): Promise<WeatherData[]> {

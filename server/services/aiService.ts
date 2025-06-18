@@ -1,6 +1,14 @@
+/**
+ * AI Service for Multilingual Claim Processing
+ * 
+ * This service handles AI-powered chat interactions for claim filing,
+ * supports multiple languages (English, Hindi, Marathi), and processes
+ * natural language queries to extract claim information automatically.
+ */
+
 import { storage } from "../storage";
 
-// Multilingual responses
+// Multilingual responses for AI chat interactions
 const responses = {
   en: {
     greeting: "Hello! I'm here to help you file your crop insurance claim. Can you please provide your name and mobile number?",
