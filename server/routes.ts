@@ -133,7 +133,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Mock blockchain verification
       const blockchainHash = await blockchainService.verifyLandOwnership(
         landHoldingData.farmerId,
-        landHoldingData.surveyNumber
+        landHoldingData.surveyNumber || undefined
       );
 
       const landHolding = await storage.createLandHolding({
